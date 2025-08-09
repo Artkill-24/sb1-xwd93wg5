@@ -1,3 +1,11 @@
 {
   "template": "bolt-vite-react-ts"
 }
+EOFcat > .bolt/config.json << 'EOF'
+{
+  "template": "bolt-vite-react-ts"
+}
+EOFcat > .bolt/config.json << 'EOF'
+{
+  "template": "bolt-vite-react-ts"
+}

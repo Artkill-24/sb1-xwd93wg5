@@ -1,12 +1,9 @@
 import React from 'react';
-import { Type, Sparkles, Share2, Hash } from 'lucide-react';
+import { Type, Sparkles, Hash } from 'lucide-react';
 import EmojiPicker from './EmojiPicker';
-import LinkEditor from './LinkEditor';
 
 const TextEditor = ({ 
-  text, setText, textPresets, linkUrl, setLinkUrl, linkText, setLinkText,
-  showCTA, setShowCTA, qrTarget, setQrTarget, showStats, setShowStats,
-  stats, formatUrl, isValidUrl, getDomainFromUrl 
+  text, setText, textPresets, showStats, setShowStats, stats
 }) => {
   return (
     <>
@@ -60,20 +57,6 @@ const TextEditor = ({
           </button>
         </div>
       </div>
-
-      <LinkEditor 
-        linkUrl={linkUrl}
-        setLinkUrl={setLinkUrl}
-        linkText={linkText}
-        setLinkText={setLinkText}
-        showCTA={showCTA}
-        setShowCTA={setShowCTA}
-        qrTarget={qrTarget}
-        setQrTarget={setQrTarget}
-        formatUrl={formatUrl}
-        isValidUrl={isValidUrl}
-        getDomainFromUrl={getDomainFromUrl}
-      />
 
       <EmojiPicker onEmojiSelect={(emoji) => setText(prev => prev + emoji)} />
 

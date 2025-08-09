@@ -1,7 +1,7 @@
 import React from 'react';
 
 const EmojiPicker = ({ onEmojiSelect }) => {
-  const emojis = ['✨', '🚀', '💡', '🔥', '⭐', '💫', '🎯', '🌟', '💪', '🏆', '🎉', '❤️', '👑', '🌈', '⚡', '🦄'];
+  const emojis = ['✨', '��', '💡', '🔥', '⭐', '💫', '🎯', '🌟', '💪', '🏆', '🎉', '❤️', '👑', '🌈', '⚡', '🦄'];
 
   return (
     <div className="bg-white p-6 rounded-xl shadow-sm">
